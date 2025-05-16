@@ -1,0 +1,132 @@
+Course Python Learning
+
+Lecture 1
+when words are used its string
+when nmber are used its intiger
+when decimal is there its called float
++-* or any such function is called mathematical operator
+
+learn about
+dmas
+bodmas
+PEMDAS
+#1. Parentheses
+#2. Exponents
+#3. Multiplication and Division (from left to right)
+#4. Addition and Subtraction (from left to right)
+
+
+for most functions use print unless we are using variables such as a= 2**3
+
+C:\Windows\System32>python
+Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print ("write my name")
+write my name
+>>> print ("this is my first line of code")
+this is my first line of code
+>>> print (2+2)
+4
+>>> print(4)
+4
+>>> print(4.256)
+4.256
+>>> print(2*2)
+4
+>>> print(4/2)
+2.0
+>>> print(2*3/2)
+3.0
+>>> print(2*3/2+3-6)
+0.0
+>>> a=2**3
+>>> a
+8
+>>>
+
+2**3 dont work in terminal because it is not a function in terminal because it is a python function 
+for example in python 2**3 is equal to 8 but in terminal it is not a function so we have to use python to run python functions
+
+IDE (Integrated Development Environment)
+
+top 10 IDE to use for python
+
+writing script using notepad for python
+open notepad rename it with .py at end e.g. script.py and do ensure from view option to check the view extension and remove the .txt
+
+how to run this saved file on cmd
+go to cmd and type python script.py and press enter it will run all the codes written together in the notepad based python file.
+
+
+
+
+Lecture 2
+extensions installed
+python
+python extension pack
+codesnap
+prettier
+intellicode
+jupyter
+jupyter cell tagsjupyter keymap
+jupyter notebook renders
+jupyter slideshow
+markdown all in one
+
+there are two types of python script one simple with .py and the other when making notebook is with extension .ipynb
+when we have to give comments on a line of code to make it understandable we use # symbol before the line of code
+
+to comment out something from the code we simply add # symbol at the beginning of the line of code and it will not be shown in result
+the shortcut for comment out is Ctrl+/
+
+variables are created to ease the process of using the same value multiple times in the code it can be of any data type like int, float, string, list, tuple, dictionary, set etc.
+
+Assignment is to learn about TYPECASTING
+TYPECASTING is the process of changing the data type of a variable from one data type to another data type such as int to float or float to int etc. For example : a=5 (int) a=float(a) (float) a=int(a) (int)
+
+BOLEAN Operator or Binary Data is a data type that can have only two values i.e. True or False such as 1 or 0.
+
+To check the type of varialbe we use type() function in python. For example: type(5) will return int or type(5.5) will return float.
+
+We dont use single = for boolean operator we use == for equality operator and != for not equal operator because single = is used for assignment operator that is assigning value to a variable.
+
+
+*Day 4*
+in file
+
+
+day 5
+also in file
+
+Day 6
+What is data?
+Data is a collection of facts and figures that are used to describe something. It can be in the form of numbers, words, images, or any other form of information.
+
+Serial Numbers are used to uniquely identify something. For example, a serial number on a product can be used to track its history and ownership. In python it is called as index.
+It consist of rows and columns and this combination is called data frame. The unit of data is called as data point. Data point is a single value in a data frame. Data frame is a two dimensional data structure with rows and columns. 
+It is similar to excel sheet. It is a table of values. It is a collection of data points. It is a collection of rows and columns. It is a collection of data points. It is a collection of rows and columns. It is a collection of data points.
+Whereas a unit is called as data point. Data point is a single value in a data frame. Data point is a single value in a data frame. Data point is a single value in a data frame. Data point is a single value in a data frame. Data point is a single value in a data frame.
+A data frame is based of rows, colums, index and variables.
+
+Data types includes Original Primary Data or Secondary Data. You can find a lot of secondary data on Databases websites like Kaggle.com, Google data search, Github, Faostats.com, World Bank, etc. 
+Or you can get data from wikipedia, twitter, facebook through data scrapping which is the process of extracting data from websites. You can also get data from sensors, GPS, etc. You also have stats from each country which is called as census data.
+Another source is DNA or Forensic data. Moreoever there is business or stock data. Lastly, there is also universities based data sets. Beside all these databases another very significant dataset is from researches that are done by researchers. They are called as research data sets.
+Data is used in various fields such as business, science, engineering, economics, etc.
+Primary data is collected directly from the source. Secondary data is collected from other sources.
+Data gives us insight for making decisions and make predictions. And this whole process of making sense from the data is called as Data Science.
+
+Primary data incurs cost and time. Secondary data is free and fast. Primary data is more accurate. Secondary data is less accurate. Primary data is more reliable. Secondary data is less reliable. Primary data is more consistent . Secondary data is less consistent.
+Google , Facebook, Amazon, Microsoft, etc. are all data driven companies. They use data to make decisions and predictions. The largest secondary data source is google as its data is mostly free and fast.
+
+In python we use pandas library to work with data frames. Pandas is a powerful data analysis library in python . It is used for data manipulation and analysis. It is used for data cleaning and preprocessing. It is used for data visualization. It is used for data modeling. It is used for data prediction.
+Likewise in seaborn there are premade data set for learning purpose which can be excessed by using seaborn.load_dataset() function. For example: tips = seaborn.load_dataset('tips')
+Similarly, scikit-learn also has premade data sets for learning purpose which can be accessed by using datasets module. For example: from sklearn import datasets; iris = datasets.load_iris()
+
+
+Functions in pandas with brackets are called as methods. For example: df.head() is a method. For example: df.info() is a method. For example: df.describe() is a method. For example: df.columns is a method. 
+Whereas functions without brackets are called as functions. For example: len() is a function. For example: type() is a function. For example: print() is a function. For example: max() is a function.
+The difference between the two is that methods are used to perform operations on a specific object, whereas functions are used to perform operations on any object.
+In pandas, we can use the following methods to get information about a data frame: head(), info(), describe(), columns, index, shape, dtype, and values.
+In pandas, we can use the following methods to manipulate a data frame: loc[], iloc[], at[], iat[], isnull(), notnull(), isna(), notna(), dropna(), drop(), rename(), and reindex().
+
+Typecasting datatype is done by using int(), float(), str(), bool(), etc. function. For example : a = 5 (int) a = float(a) (float) a = int(a) (int)
