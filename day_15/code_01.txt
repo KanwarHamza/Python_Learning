@@ -1,0 +1,42 @@
+# Import the necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Load the Titanic dataset into a pandas DataFrame
+titanic = sns.load_dataset('titanic')
+
+# View the first few rows of the dataset
+titanic.head()
+
+# View the column names and data types
+titanic.info()
+
+# Check for missing values
+print(data.isnull().sum())
+
+# Handle missing values
+# Option 1: Drop rows with missing values
+titanic.dropna(inplace=True)
+
+# Option 2: Impute missing values
+titanic['Age'].fillna(titanic['Age'].mean(), inplace=True)
+
+
+# Check for outliers and remove or transform them as necessary
+sns.boxplot(x=titanic['age'])
+
+# Transform outliers
+titanic['Age'] = np.log(titanic['Age'])
+
+# Feature engineering
+titanic['family_size'] = titanic['sibsp'] + titanic['parch'] + 1
+titanic['is_alone'] = 1 # initialize to yes/1 is alone
+titanic['is_alone'].loc[titanic['family_size'] > 1] = 0 # now update to no/0 if family size is greater than 1
+
+# Group and aggregate data
+data = titanic.groupby('Pclass').mean()
+
+# Save the cleaned dataset
+titanic.to_csv('titanic_cleaned.csv', index=False)

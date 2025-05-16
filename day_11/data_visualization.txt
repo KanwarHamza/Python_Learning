@@ -1,0 +1,31 @@
+# Data visalization
+data ---------> Plot
+plot usually consist of x and y axis which is called a graph
+
+There are several forms of graphs like scatter plot, bar plot, histogram, line plot, pie chart, box plot, stacked bark Plot etc.
+These x axis and y axis are made up on two variables which are called data points and these are called coordinates
+
+lets say (x,y)=(3,4)
+import draw as data
+data.plot(3,4)
+
+
+where x=weight
+y=height
+
+or x= food
+y= weight
+
+food= 35, 10, 25, 40
+weight= 60, 70, 75, 80
+The marks that depicts each of the position on a graph is called tick marks
+
+bar plot is used to show the comparison between two or more variables
+histogram is used to show the distribution of a single variable
+line plot is used to show the trend of a variable over time
+pie chart is used to show the proportion of a variable in a whole
+box plot is used to show the distribution of a variable in terms of quartiles
+stacked bar plot is used to show the comparison between two or more variables in a single bar
+scatter plot is used to show the relationship between two variables
+other types of plots are used to show the relationship between two or more variables in a single plot such as heatmap, contour plot, 3D plot etc.
+
